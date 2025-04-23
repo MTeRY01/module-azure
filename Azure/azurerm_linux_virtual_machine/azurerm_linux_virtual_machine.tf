@@ -11,7 +11,10 @@ resource "azurerm_linux_virtual_machine" "VM" {
     var.nic_id,
   ]
 
-
+admin_ssh_key {
+    username   = var.admin_username
+    public_key = file("${path.root}/../ansible_project/keys/id_rsa.pub")  
+}
 
 
   os_disk {
