@@ -34,3 +34,15 @@ variable "network_security_group_id" {
   default     = null
   
 }
+
+# variable "backend_pool_id" {    
+#   description = "ID of the backend address pool"
+#   type        = string
+#   default     = null
+  
+# }
+
+# variable "nic_names_map" {
+#   type        = map(string)
+#   description = "Map of NIC configurations (key = logical name, value = NIC name)"
+# }
